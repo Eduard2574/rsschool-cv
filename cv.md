@@ -1,44 +1,50 @@
-Eduard Kabanov 
+# **Eduard Kabanov**
 
-Junior Front-end Developer 
+### **Junior Front-end Developer**
 
-Contact information 
+### **Contact information**
 
-GitHub: Eduard2574 
-Phone: +7 917 134 88 21 
-E-mail: Kabanoveg@list.ru 
-Location: Toliatty, Samarskaya obl., Russian Federation 
+_GitHub:_ Eduard2574
 
-About me 
+_Phone:_ +7 917 134 88 21
 
-I have decided to change my profession as a sports coach and fulfill my long-standing dream - to become a programmer. Now I don't have enough knowledge and experience, but I have a great desire to learn an interesting profession of a front-end developer. In the future, I would like to work in a team of like-minded people. 
+_E-mail:_ Kabanoveg@list.ru
 
-Education 
+_Location:_ Toliatty, Samarskaya obl., Russian Federation
 
-12/2021 – now - Rolling Scopes School Course - JavaScript Development 
-11/21 - 12/21 - courses "Developer of applications for Android" 
-09/1999 – 06/2004 - Togliatti State Academy of Service, specialty: finance and credit 
+### **About me**
 
-Experience 
+I have decided to change my profession as a sports coach and fulfill my long-standing dream - to become a programmer. Now I don&#39;t have enough knowledge and experience, but I have a great desire to learn an interesting profession of a front-end developer. In the future, I would like to work in a team of like-minded people.
 
-01/2011 – now - individual entrepreneur - sports coach 
-09/2003 – 01/2011 - various positions in the banking sector 
+### **Education**
 
-Key strengths 
+12/2021 – now - Rolling Scopes School Course - JavaScript Development
 
-fast learning ability 
-responsibility 
-focus on results 
-sociability 
+11/21 - 12/21 - courses &quot;Developer of applications for Android&quot;
 
-Skills 
+09/1999 – 06/2004 - Togliatti State Academy of Service, specialty: finance and credit
 
-HTML/CSS 
-JavaScript (basic) 
-Kotlin (basic) 
-Android Studio (basic) 
-Figma 
+### **Experience**
 
-Endlish 
+01/2011 – now - individual entrepreneur - sports coach
 
-Pre-intermidate (A2) 
+09/2003 – 01/2011 - various positions in the banking sector
+
+### **Key strengths**
+
+- fast learning ability
+- responsibility
+- focus on results
+- sociability
+
+### **Skills**
+
+- HTML/CSS
+- JavaScript (basic)
+- Kotlin (basic)
+- Android Studio (basic)
+- Figma
+
+### **Endlish**
+
+Pre-intermidate (A2)
