@@ -1,0 +1,12 @@
+.header_cv, .footer_cv {
+    margin-bottom: 25px;
+    width: auto;
+    height: 40px;
+    background-image: linear-gradient(
+-40deg, #6176ab 0%, #edf0f5 100%);
+    border: 2px solid #c5d0db;
+    padding-left: 30px;
+    padding-bottom: 18px;
+    font-style: italic;
+    color: #ffffff;
+}
