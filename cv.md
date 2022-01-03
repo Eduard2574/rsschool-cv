@@ -45,6 +45,6 @@ I have decided to change my profession as a sports coach and fulfill my long-sta
 - Android Studio (basic)
 - Figma
 
-### **Endlish**
+### **English**
 
 Pre-intermidate (A2)

@@ -1,3 +1,16 @@
+@font-face {
+    font-family: Roboto;
+     src: url("assets/fonts/Roboto.ttf");
+   }
+
+* {
+    box-sizing: border-box;
+    }
+
+.body_cv {
+    font-family: 'Roboto', sans-serif;
+    }
+
 .header_cv, .footer_cv {
     margin-bottom: 25px;
     width: auto;
@@ -9,4 +22,9 @@
     padding-bottom: 18px;
     font-style: italic;
     color: #ffffff;
-}
+    }
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
