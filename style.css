@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth; 
+    }
+@media (max-width: 768px) {
+    .section {
+    width: 100%;
+    }
+    }
+@font-face {
+    font-family: Roboto;
+    src: url("./fonts/Roboto.ttf");
+   }
+
+* {
+    box-sizing: border-box;
+    }
+.body_cv {
+    margin: 0; 
+    padding: 0;
+    min-height: 100px;
+    font-family: 'Roboto', sans-serif;
+    }
+.header_cv, 
+.footer_cv {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 50px;
+    background-image: linear-gradient(
+    -40deg, #6176ab 0%, #edf0f5 100%);
+    border: 2px solid #c5d0db;
+    }
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    }
+.nav-link {
+    padding: 0 20px;
+    line-height: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.5));
+    cursor: pointer;
+    }
+.nav-link:hover {
+    filter: brightness(0.9);
+    }
+
+.main_cv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1440px;
+    max-height: 900px;
+    background-image: linear-gradient(
+    -40deg, #e7e3fa 0%, #fcfbff 100%);
+    }
+.summary-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+.section {
+    width: 45%;
+    }
+.side_cv {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 35%;
+    height: 90%;
+    padding-left: 2px;
+    padding-top: 40px;
+    font-style: italic;
+    line-height: 2;
+    color:#483d8b;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: -5px -5px 5px 5px #cccccc;
+    }
+.foto {
+    object-fit: cover;
+    max-width: 420px;
+    height: auto;
+    padding: 15px 15px;
+}
+.section_title {
+    position: relative;
+    }
+.section_title::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 3px;
+    width: 200px;
+    background-color: #483d8b;
+    }
+.section_title_side {
+    text-align: center;
+    }
+.summary {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 55%;
+    height: 90%;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 30px;
+    background: #ffffff;
+    border: 0 solid #c5d0db;
+    border-radius: 30px;
+    box-shadow: -5px -5px 5px 5px #cccccc;
+    color: #483d8b;    
+    }
+.footer_cv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    min-height: calc(50px);
+    border-bottom: 0;
+    }
+.footer_item_cv {
+    padding: 0 100px;
+    }
+.year {
+    position: relative;
+    padding: 0 100px;
+    color: #483d8b; 
+   }
+.githab {
+    padding: 0 100px;
+    text-decoration: none; 
+    color: #483d8b;
+    font-weight: bold;
+    font-style: normal;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.5));
+    }
