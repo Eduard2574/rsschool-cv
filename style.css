@@ -47,6 +47,7 @@ html {
     filter: brightness(0.9);
     }
 
+/*-----------------------------------main--------------------------------------------*/
 .main_cv {
     display: flex;
     flex-wrap: wrap;
@@ -118,6 +119,7 @@ html {
     box-shadow: -5px -5px 5px 5px #cccccc;
     color: #483d8b;    
     }
+/*-----------------------------------footer--------------------------------------------*/
 .footer_cv {
     display: flex;
     flex-wrap: wrap;
