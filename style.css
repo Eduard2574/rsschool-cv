@@ -37,8 +37,8 @@ html {
 .nav-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 17px;
     margin-block-start: 13px;
     margin-right: 20px;
     list-style: none;
@@ -54,7 +54,14 @@ html {
     }
 .nav-link:hover {
     filter: brightness(0.9);
-    }
+    } 
+@media (max-width: 640px) {
+    .nav-link {
+        font-size: 15px;
+          }
+    .nav-list {
+        margin-right: 5px;
+        }}
 
 /*-----------------------------------main--------------------------------------------*/
 .main_cv {
@@ -66,7 +73,6 @@ html {
     margin: 0 auto;
     max-width: 1440px;
     height: auto;
-    min-height: 280px;
     background-image: linear-gradient(
     -40deg, #e7e3fa 0%, #fcfbff 100%);
     }
@@ -79,11 +85,11 @@ html {
     width: 45%;
     }
 .side_cv {
-    position: relative;
     margin-top: 20px;
-    margin-bottom: 20px;
-    width: 35%;
+    max-width: 510px;
+    min-width: 230px;
     height: auto;
+    max-height: 772px;
     padding-left: 2px;
     font-style: italic;
     line-height: 2;
@@ -92,16 +98,18 @@ html {
     border-radius: 30px;
     box-shadow: -5px -5px 5px 5px #cccccc;
     }
+.contact_item {
+    margin-right: 10px;
+    list-style-type: none;
+}
 .photo {
     display: flex;
-    justify-content: flex-start;
     margin-top: 40px;
     max-width: 420px;
-    height: 500px;
-    align-items: center;
+    height: 52vh;
     background: url('./Eduard.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: contain;
 }
 .section_title {
@@ -120,10 +128,10 @@ html {
     text-align: center;
     }
 .summary {
-    position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 58%;
+    max-width: 836px;
+    min-width: 372px;
     height: auto;
     padding-left: 30px;
     padding-right: 20px;
@@ -134,20 +142,38 @@ html {
     box-shadow: -5px -5px 5px 5px #cccccc;
     color: #483d8b;    
     }
-
 .projects {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
     } 
-.image_project {
-    border: 5px solid #483d8b;
-    border-radius: 10px;
+@media (max-width: 640px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+#projects {
+    width: 100%;
 }
-
+.image_project {
+    border: 0px solid #483d8b;
+    border-radius: 10px;
+    box-shadow: -3px -3px 3px 3px #cccccc;
+    }
+.image_project:hover, 
+.image_project:focus {
+        box-shadow: 0 0.5em 0.5em -0.4em #483d8b;
+        transform: translatey(-0.65em);
+    }
 #code {
     width: 99%;
+    }
+@media (max-width: 640px) {
+    .code_text {
+        font-size: 10px;
+        }
     }
 
 /*-----------------------------------footer--------------------------------------------*/
@@ -160,15 +186,15 @@ html {
     border-bottom: 0;
     }
 .footer_item_cv {
-    padding: 0 100px;
+    padding: 0px;
     }
 .year {
     position: relative;
-    padding: 0 100px;
+    padding: 0px;
     color: #483d8b; 
    }
 .githab {
-    padding: 0 100px;
+    padding: 0 120px;
     text-decoration: none; 
     color: #483d8b;
     font-weight: bold;
