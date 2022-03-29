@@ -13,7 +13,7 @@
 </head>
 <body class="body_cv">
     <header class="header_cv">
-        <nav class="nav">
+        <nav class="navigation">
             <ul class="nav-list">
               <li class="nav-item"><a href="#contact" class="nav-link">Contact information</a></li>
               <li class="nav-item"><a href="#about_me" class="nav-link">About me</a></li>
@@ -22,14 +22,14 @@
               <li class="nav-item"><a href="#key_strengths" class="nav-link">Key strengths</a></li>
               <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
               <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+              <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
               <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
             </ul>
           </nav>
     </header> 
     <main class="main_cv">
         <div class="side_cv">
-            <figure>
-                    <img src="./Eduard.jpg" class="foto" alt="Photo of Eduard Kabanov">
+            <figure class="photo">
             </figure> 
             <section class="section_side" id="contact">
                 <h2 class="section_title_side">Contact information</h2>
@@ -98,12 +98,41 @@
                     <h2 class="section_title">English</h2>
                     <p>Endlish - Pre-intermidate (A2)</p>
                 </section>
+                <section class="section" id="projects">
+                    <h2 class="section_title">Projects</h2>
+                    <div class="projects">
+                        <div class="project_item">
+                            <p>"Eco-sounds"</p>
+                            <a href="https://rolling-scopes-school.github.io/eduard2574-JSFEPRESCHOOL/js30-ecosounds/"><img src="./eco-sounds.jpg" alt="eco-sounds" width="290px" class="image_project"/></a>
+                        </div>
+                        <div class="project_item">
+                            <p>"Random-jokes"</p>
+                            <a href="https://rolling-scopes-school.github.io/eduard2574-JSFEPRESCHOOL/js30-random-jokes/"><img src="./random-jokes.jpg" alt="random-jokes" width="290px" class="image_project"/></a>
+                        </div>
+                        <div class="project_item">
+                            <p>"Portfolio"</p>
+                            <a href="https://rolling-scopes-school.github.io/eduard2574-JSFEPRESCHOOL/portfolio/"><img src="./portfolio.jpg" alt="portfolio" width="290px" class="image_project"/></a>
+                        </div>
+                    </div>
+                </section>
                 <section class="section" id="code"> 
-                    <h2 class="section_title_code" style="text-align: right;">Code</h2>
-                    <pre>
-                        <span style="color: #8a2be2;">function</span> <span style="color:#ff7f50">capitalizeWord(word)</span> {<span style="color: #8a2be2;">
-                            return</span> word[<span style="color:#ff7f50">0</span>].toUpperCase() + word.slice(<span style="color:#ff7f50">1</span>);
-                        }</pre>
+                    <h2 class="section_title">Code</h2>
+                    <pre class="code_text">
+<span style="color: #8a2be2;">function</span> <span style="color:#ff7f50">likes</span>(<span style="color:#ff7f50">names</span>) {
+    <span style="color: #8a2be2;">let</span> str = <span style="color: #25741a;">''</span>;
+    <span style="color: #8a2be2;">if</span> (names.length === <span style="color:#ff7f50">0</span>) {
+        <span style="color: #8a2be2;">return</span> str = <span style="color: #25741a;">'no one likes this'</span>;
+    } <span style="color: #8a2be2;">else if</span> (names.length === <span style="color:#ff7f50">1</span>) {
+        <span style="color: #8a2be2;">return</span> str = `${names[<span style="color:#ff7f50">0</span>]} likes this`;
+    } <span style="color: #8a2be2;">else if</span> (names.length === <span style="color:#ff7f50">2</span>) {
+        <span style="color: #8a2be2;">return</span> str = `${names[<span style="color:#ff7f50">0</span>]} and ${names[<span style="color:#ff7f50">1</span>]} like this`;
+    } <span style="color: #8a2be2;">else if</span> (names.length === <span style="color:#ff7f50">3</span>) {
+        <span style="color: #8a2be2;">return</span> str = `${names[<span style="color:#ff7f50">0</span>]}, ${names[<span style="color:#ff7f50">1</span>]} and ${names[<span style="color:#ff7f50">2</span>]} like this`;
+    } <span style="color: #8a2be2;">else if</span> (names.length >= <span style="color:#ff7f50">3</span>) {
+        <span style="color: #8a2be2;">return</span> str = `${names[<span style="color:#ff7f50">0</span>]}, ${names[<span style="color:#ff7f50">1</span>]} and ${names.length - <span style="color:#ff7f50">2</span>} others like this`;
+    }
+}
+                    </pre>
                 </section>
             </div>
         </div>

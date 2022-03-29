@@ -1,15 +1,11 @@
-html {
-    scroll-behavior: smooth; 
-    }
-@media (max-width: 768px) {
-    .section {
-    width: 100%;
-    }
-    }
 @font-face {
     font-family: Roboto;
     src: url("./fonts/Roboto.ttf");
-   }
+}
+
+html {
+    scroll-behavior: smooth; 
+    }
 
 * {
     box-sizing: border-box;
@@ -17,36 +13,57 @@ html {
 .body_cv {
     margin: 0; 
     padding: 0;
-    min-height: 100px;
+    min-height: 320px;
     font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
     }
 .header_cv, 
 .footer_cv {
     max-width: 1440px;
     margin: 0 auto;
-    height: 50px;
+    height: 55px;
     background-image: linear-gradient(
     -40deg, #6176ab 0%, #edf0f5 100%);
     border: 2px solid #c5d0db;
     }
-.nav-list {
+
+/*-----------------------------------header--------------------------------------------*/
+
+.navigation {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    height: 50px;
+    }
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 17px;
+    margin-block-start: 13px;
+    margin-right: 20px;
     list-style: none;
     }
 .nav-link {
-    padding: 0 20px;
-    line-height: 10px;
+    display: block;
+    align-items: center;
     text-decoration: none;
     color: #ffffff;
     filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.5));
+    text-align: center;
     cursor: pointer;
     }
 .nav-link:hover {
     filter: brightness(0.9);
-    }
+    } 
+@media (max-width: 640px) {
+    .nav-link {
+        font-size: 15px;
+          }
+    .nav-list {
+        margin-right: 5px;
+        }}
 
+/*-----------------------------------main--------------------------------------------*/
 .main_cv {
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +72,7 @@ html {
     align-items: flex-start;
     margin: 0 auto;
     max-width: 1440px;
-    max-height: 900px;
+    height: auto;
     background-image: linear-gradient(
     -40deg, #e7e3fa 0%, #fcfbff 100%);
     }
@@ -68,13 +85,12 @@ html {
     width: 45%;
     }
 .side_cv {
-    position: relative;
     margin-top: 20px;
-    margin-bottom: 20px;
-    width: 35%;
-    height: 90%;
+    max-width: 510px;
+    min-width: 230px;
+    height: auto;
+    max-height: 772px;
     padding-left: 2px;
-    padding-top: 40px;
     font-style: italic;
     line-height: 2;
     color:#483d8b;
@@ -82,11 +98,19 @@ html {
     border-radius: 30px;
     box-shadow: -5px -5px 5px 5px #cccccc;
     }
-.foto {
-    object-fit: cover;
+.contact_item {
+    margin-right: 10px;
+    list-style-type: none;
+}
+.photo {
+    display: flex;
+    margin-top: 40px;
     max-width: 420px;
-    height: auto;
-    padding: 15px 15px;
+    height: 52vh;
+    background: url('./Eduard.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
 .section_title {
     position: relative;
@@ -97,18 +121,18 @@ html {
     left: 0px;
     bottom: 0px;
     height: 3px;
-    width: 200px;
+    width: 175px;
     background-color: #483d8b;
     }
 .section_title_side {
     text-align: center;
     }
 .summary {
-    position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 55%;
-    height: 90%;
+    max-width: 836px;
+    min-width: 372px;
+    height: auto;
     padding-left: 30px;
     padding-right: 20px;
     padding-top: 30px;
@@ -118,26 +142,59 @@ html {
     box-shadow: -5px -5px 5px 5px #cccccc;
     color: #483d8b;    
     }
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    } 
+@media (max-width: 640px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+#projects {
+    width: 100%;
+}
+.image_project {
+    border: 0px solid #483d8b;
+    border-radius: 10px;
+    box-shadow: -3px -3px 3px 3px #cccccc;
+    }
+.image_project:hover, 
+.image_project:focus {
+        box-shadow: 0 0.5em 0.5em -0.4em #483d8b;
+        transform: translatey(-0.65em);
+    }
+#code {
+    width: 99%;
+    }
+@media (max-width: 640px) {
+    .code_text {
+        font-size: 10px;
+        }
+    }
+
+/*-----------------------------------footer--------------------------------------------*/
 .footer_cv {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0;
-    min-height: calc(50px);
     border-bottom: 0;
     }
 .footer_item_cv {
-    padding: 0 100px;
+    padding: 0px;
     }
 .year {
     position: relative;
-    padding: 0 100px;
+    padding: 0px;
     color: #483d8b; 
    }
 .githab {
-    padding: 0 100px;
+    padding: 0 120px;
     text-decoration: none; 
     color: #483d8b;
     font-weight: bold;
